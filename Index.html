@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function actualizarInformacion() {
+            document.querySelector('.name').textContent = 'Cristhian Vasco';
+            document.querySelector('.title').textContent = 'Ingeniero de sistemas';
+            document.querySelector('.description').textContent = 'Soy un ingeniero en tecnologías de la información con experiencia en desarrollo de software, bases de datos y gestión de proyectos. Me encanta aprender nuevas tecnologías y trabajar en equipo.';
+            alert('La información ha sido actualizada correctamente!');
+        }
+    </script>
+</head>
+<body>
+    <div class="card">
+        <img src="Foto de perfil.jpeg" alt="Foto de perfil" class="profile-pic">
+        <div class="name">Cristhian Vasco</div>
+        <div class="title">Ing. de sistemas</div>
+        <p class="description">Estudiante de ingeniería de sistemas con conocimientos en programación, 
+            bases de datos, redes y seguridad informática. He desarrollado habilidades en desarrollo de software, 
+            análisis de datos, DevOps. Me considero una persona responsable y ordenada.
+        </p>
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/cristhian-vasco-1162b0326/" target="_blank">Linkedin</a></li>
+            <li><a href="https://x.com/?lang=es" target="_blank">Twitter</a></li>
+            <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+        </ul>
+        <button onclick="actualizarInformacion()">Actualizar Información</button>
+    </div>
+</body>
+</html>
+
